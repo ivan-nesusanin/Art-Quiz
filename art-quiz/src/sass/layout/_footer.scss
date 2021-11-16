@@ -1,0 +1,19 @@
+footer {
+  div {
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.decorate-link {
+  text-decoration: none;
+  color: $color-text;
+
+  &:hover {
+    color: $color-hover;
+    transition: 0.5s;
+  }
+}
+
