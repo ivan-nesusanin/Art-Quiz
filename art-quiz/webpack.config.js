@@ -42,7 +42,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/[name][ext][query]',
+          filename: 'assets/img/[name][ext][query]',
         },
       },
       {

@@ -1,17 +1,20 @@
 import { Home } from './home';
 import { Settings } from './settings';
-// import { Categories } from './pages/Categories';
+import { Artists } from './artists';
+import { Pictures } from './pictures';
 
 const homeInstance = new Home();
 const settingsInstance = new Settings();
-// const categoriesInstance = new Categories();
+const artistsInstance = new Artists();
+const picturesInstance = new Pictures();
 
-const section = document.querySelector('section');
+const section = document.querySelector('#section');
 
 const routes = {
   '/': homeInstance,
   '/settings': settingsInstance,
-  // '/categories': categoriesInstance,
+  '/artists': artistsInstance,
+  '/pictures': picturesInstance,
 };
 
 const btnSettings = document.querySelector('.btn-settings');
@@ -35,4 +38,34 @@ async function returnHome() {
   await page.after_render();
   const btnSettings = document.querySelector('.btn-settings');
   btnSettings.addEventListener('click', goToSettings);
+  const artists = document.querySelector('#artists');
+  artists.addEventListener('click', goToArtists);
+  const pictures = document.querySelector('#pictures');
+  pictures.addEventListener('click', goToPictures);
+};
+
+const artists = document.querySelector('#artists');
+artists.addEventListener('click', goToArtists);
+
+async function goToArtists() {
+  const content = null || section;
+  const parsedURL = '/artists';
+  const page = routes[parsedURL] ? routes[parsedURL] : false;
+  content.innerHTML = await page.render();
+  await page.after_render();
+  const btnHome = document.querySelector('.btn-home');
+  btnHome.addEventListener('click', returnHome);
+};
+
+const pictures = document.querySelector('#pictures');
+pictures.addEventListener('click', goToPictures);
+
+async function goToPictures() {
+  const content = null || section;
+  const parsedURL = '/pictures';
+  const page = routes[parsedURL] ? routes[parsedURL] : false;
+  content.innerHTML = await page.render();
+  await page.after_render();
+  const btnHome = document.querySelector('.btn-home');
+  btnHome.addEventListener('click', returnHome);
 };

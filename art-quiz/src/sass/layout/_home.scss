@@ -1,9 +1,9 @@
 .button {
   background-color: $color-text;
   color: $color-black;
-  min-height: 40vh;
-  min-width: 15vw;
-  margin-top: 30px;
+  min-height: 280px;
+  min-width: 250px;
+  margin: 30px 40px 0;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
     font-size: 25px;
     color: $color-black;
     border: 20px solid;
-    border-image: url("./../assets/border2.jpg") 30;
+    border-image: url("./../assets/img/border2.jpg") 30;
     transition: 1s;
   }
 }

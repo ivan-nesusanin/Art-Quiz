@@ -1,0 +1,52 @@
+.link {
+  display: inline-block;
+  margin-bottom: 45px;
+  font-size: large;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text;
+  border: solid 2px $color-text;
+  border-radius: 2rem;
+
+  &:hover {
+    color: $color-hover;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+  border-radius: 0 0 2rem 2rem;
+  filter: blur(2px);
+
+  &:hover {
+    filter: blur(0);
+    transition: 0.8s;
+  }
+}
+
+.btn-home {
+  background-color: $color-text;
+  color: $color-black;
+  width: 15%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 1px solid $color-text;
+  transition: 0.8s;
+
+  &:hover {
+    width: 30%;
+    letter-spacing: 10px;
+    background-color: $color-done;
+    transition: 0.8s;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+}

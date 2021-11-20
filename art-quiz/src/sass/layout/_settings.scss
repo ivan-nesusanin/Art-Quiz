@@ -47,7 +47,7 @@ h3 {
 .btn-save {
   background-color: $color-text;
   color: $color-black;
-  width: 120px;
+  width: 15%;
   margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
@@ -56,6 +56,8 @@ h3 {
   border: 1px solid $color-text;
 
   &:hover {
+    width: 30%;
+    letter-spacing: 10px;
     background-color: $color-done;
     transition: 0.8s;
   }
