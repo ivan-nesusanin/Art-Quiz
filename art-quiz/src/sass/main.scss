@@ -1,3 +1,5 @@
+@import '~normalize.css';
+
 // Abstract
 @import 'abstract/constants';
 
@@ -6,3 +8,5 @@
 @import 'layout/header';
 @import 'layout/section';
 @import 'layout/footer';
+@import 'layout/home';
+@import 'layout/settings';

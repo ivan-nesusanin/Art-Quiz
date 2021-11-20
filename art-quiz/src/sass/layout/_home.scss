@@ -1,0 +1,67 @@
+.button {
+  background-color: $color-text;
+  color: $color-black;
+  min-height: 40vh;
+  min-width: 15vw;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 1px solid $color-text;
+  transition: 1s;
+
+  &:hover {
+    font-size: 25px;
+    color: $color-black;
+    border: 20px solid;
+    border-image: url("./../assets/border2.jpg") 30;
+    transition: 1s;
+  }
+}
+
+.svg {
+  display: block;
+  padding: 4rem;
+  margin-top: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.artist {
+  background-image: url("./../assets/svg/artists_bw.svg");
+}
+
+.picture {
+  background-image: url("./../assets/svg/palitra_bw.svg");
+}
+
+.btn-settings {
+  background-color: $color-text;
+  color: $color-black;
+  margin: 40px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 1px solid $color-text;
+  transition: 1s;
+
+  &:hover {
+    color: $color-black;
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}
+
+.settings {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-image: url("./../assets/svg/cogwheel.svg");
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}

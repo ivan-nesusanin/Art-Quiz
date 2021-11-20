@@ -1,9 +1,9 @@
 footer {
+  height: 80px;
+
   div {
-    display: flex;
-    margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
 
@@ -13,6 +13,7 @@ footer {
 
   &:hover {
     color: $color-hover;
+    font-weight: bold;
     transition: 0.5s;
   }
 }

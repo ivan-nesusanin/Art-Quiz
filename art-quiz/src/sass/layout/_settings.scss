@@ -1,0 +1,78 @@
+.my-row {
+  padding: 0;
+  margin: 0;
+}
+
+.my-col {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0 calc(100vh/20);
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: $color-black;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  margin: 20px;
+  border-radius: 2rem;
+  background-color: $color-text;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 50px;
+  margin: 15px auto;
+}
+
+.sound {
+  background-image: url("./../assets/svg/mute_sound.svg");
+}
+
+.hourglass {
+  background-image: url("./../assets/svg/hourglass.svg");
+}
+
+.btn-save {
+  background-color: $color-text;
+  color: $color-black;
+  width: 120px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 1px solid $color-text;
+
+  &:hover {
+    background-color: $color-done;
+    transition: 0.8s;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+}
+
+.progress {
+  height: 8px;
+  margin: 30px;
+  cursor: col-resize;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 20px auto;
+}
