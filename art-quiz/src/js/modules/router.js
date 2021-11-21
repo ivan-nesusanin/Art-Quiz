@@ -19,12 +19,21 @@ const routes = {
 
 const btnSettings = document.querySelector('.btn-settings');
 btnSettings.addEventListener('click', goToSettings);
+btnSettings.addEventListener('click', doVisible);
+
+function doVisible() {
+  section.classList.remove('section_visible');
+  setTimeout(() => {
+    section.classList.add('section_visible');
+  }, 500);
+};
 
 async function goToSettings() {
   const content = null || section;
   const parsedURL = '/settings';
   const page = routes[parsedURL] ? routes[parsedURL] : false;
   content.innerHTML = await page.render();
+  // doVisible();
   await page.after_render();
   const btnSave = document.querySelector('.btn-save');
   btnSave.addEventListener('click', returnHome);

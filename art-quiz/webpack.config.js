@@ -20,7 +20,7 @@ module.exports = {
     port: 9000,
     hot: isDev,
   },
-  devtool: isDev ? 'source-map' : '',
+  devtool: isDev ? 'source-map' : false,
   plugins: [
     new HTMLWebpackPlugin({
       template: './index.html',
