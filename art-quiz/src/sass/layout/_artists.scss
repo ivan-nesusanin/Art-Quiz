@@ -49,9 +49,9 @@
 .btn-home {
   background-color: $color-text;
   color: $color-black;
-  width: 15%;
+  min-width: 100px;
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 75%;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 2rem;
@@ -59,8 +59,8 @@
   transition: 0.8s;
 
   &:hover {
-    width: 30%;
-    letter-spacing: 10px;
+    min-width: 40%;
+    letter-spacing: 5px;
     background-color: $color-done;
     transition: 0.8s;
   }

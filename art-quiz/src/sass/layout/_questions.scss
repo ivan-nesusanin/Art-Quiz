@@ -1,0 +1,27 @@
+p {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.painting {
+  height: 40vh;
+  margin: 0 20px 20px;
+}
+
+.btn-answer {
+  background-color: $color-text;
+  color: $color-black;
+  min-width: 200px;
+  margin: 5px 0;
+  font-size: 75%;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 1px solid $color-text;
+}
+
+.painting_min {
+  height: 25vh;
+  margin: 0 20px 20px;
+}
