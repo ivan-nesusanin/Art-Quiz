@@ -3,9 +3,10 @@
 ![Screen Main Page](https://github.com/ivan-nesusanin/rsschool-cv/blob/cv-html-css/Assets/art-quiz.JPG?raw=true)
 
 ## Краткое описание приложения
-SPA приложение-викторина на знание шедевров живописи и их авторов.
+Адаптивное SPA приложение-викторина на знание шедевров живописи и их авторов.
 
 Ключевые моменты:
+-собственный дизайн;
 -JavaScript классы;
 -модули в JavaScript;
 -самостоятельная сборка Webpack;
